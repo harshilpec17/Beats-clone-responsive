@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            plugins: {},
+            backgroundImage: {
+              herodesktop: "url('/asset/hero-desktop.jpg')",
+              herotablet: "url('/asset/hero-tablet.jpg')",
+              heromobile: "url('/asset/hero-mobile.jpg')",
+              heromain3: "url('/asset/hero-bottom.jpg')",
+              heromobile3: "url('/asset/hero-bottom-mobile.jpg')",
+            },
+            colors: {
+              black: "#161616",
+              red: "#E31837",
+              backgroundcolor: "#F0F0F0",
+            },
+          },
+        },
+      };
+    </script>
+    <title>beats by Dre</title>
+  </head>
+  <body>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Antonio&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Antonio", sans-serif;
+      }
+    </style>
+    <header>
+      <!-- Navigation bar -->
+      <nav class="w-[100vw]">
+        <div
+          class="md:mx-12 px-5 py-2 md:py-5 text-[18px] flex flex-row justify-between md:justify-around items-center"
+        >
+          <div class="toggle-nav text-[28px] md:hidden hover:">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <div class="brand-logo flex">
+            <a href="#" target="#" rel="noopener noreferrer"
+              ><img
+                src="./asset/beats-logo.png"
+                alt="beats logo"
+                class="w-[48px] md:w-[75px]"
+            /></a>
+          </div>
+          <div class="hidden md:block mx-40 w-[100vw]">
+            <ul class="flex flex-row justify-around grow-1">
+              <a href="#" target="#" rel="noopener noreferrer"
+                ><li>DISCOVER</li></a
+              >
+              <a href="#" target="#" rel="noopener noreferrer"><li>SHOP</li></a>
+              <a href="#" target="#" rel="noopener noreferrer"
+                ><li>SUPPORT</li></a
+              >
+            </ul>
+          </div>
+          <div class="search-bar">
+            <a href="#" target="#" rel="noopener noreferrer"
+              ><img
+                src="./asset/search_icon.svg"
+                alt="Search-bar"
+                class="md:w-[70px]"
+            /></a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Fast and free delivery -->
+
+      <!-- Small screen -->
+      <div
+        class="md:hidden lg:hidden bg-black top-0 py-4 flex items-center justify-center w-screen"
+      >
+        <h1 class="text-white text-center text-[18px]">
+          Fast and free delivery
+          <span class="px-2"
+            ><i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </span>
+        </h1>
+      </div>
+      <div>
+        <span
+          ><img
+            src="./asset/hero-mobile.jpg"
+            alt="mobile-image"
+            class="md:hidden lg:hidden"
+        /></span>
+        <div>
+          <div
+            id="heading family"
+            class="flex flex-col font-bold align-left md:hidden lg:hidden bg-[#E7E6E1] w-screen"
+          >
+            <h3 class="text-red text-[22px] ml-8 pt-8">NEW COLORS</h3>
+            <h1 class="text-black text-[60px] ml-8">Beats Fit Pro</h1>
+            <h2 class="text-black text-[30px] ml-8">Lock In. Work Out.</h2>
+            <a href="#" target="#" rel="noopener noreferrer"
+              ><button
+                type="submit"
+                class="text-white bg-black font-normal ml-8 text-[22px] py-2 px-6 rounded-full mt-3 mb-3 hover:shadow-[0px_-40px_40px_40px#E31837_inset] hover:duration-300 hover:ease-in"
+              >
+                SHOP
+              </button></a
+            >
+          </div>
+        </div>
+      </div>
+      <!-- medium screen -->
+      <div
+        class="hidden md:block lg:hidden w-screen bg-black top-0 py-4 flex items-center justify-center"
+      >
+        <h1 class="text-white text-center text-[18px]">
+          Fast and free delivery
+          <span class="px-2"
+            ><i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </span>
+        </h1>
+      </div>
+      <div
+        class="hidden md:block lg:hidden bg-herotablet bg-cover bg-center flex h-screen w-screen"
+      >
+        <div
+          id="heading family"
+          class="flex flex-col justify-center font-bold items-start h-full mx-16 lg:hidden"
+        >
+          <h3 class="text-red text-[22px]">NEW COLORS</h3>
+          <h1 class="text-black text-[80px]">Beats Fit Pro</h1>
+          <h2 class="text-black text-[30px]">Lock In. Work Out.</h2>
+          <a href="#" target="#" rel="noopener noreferrer"
+            ><button
+              type="submit"
+              class="text-white bg-black font-normal text-[22px] py-2 px-6 rounded-full mt-5 hover:shadow-[0px_-40px_40px_40px#E31837_inset] hover:duration-300 hover:ease-in"
+            >
+              SHOP
+            </button></a
+          >
+        </div>
+      </div>
+
+      <!-- large screen -->
+      <div
+        class="hidden md:hidden lg:block bg-black top-0 py-4 flex items-center justify-center w-screen"
+      >
+        <h1 class="text-white text-center text-[18px]">
+          Fast and free delivery
+          <span class="px-2"
+            ><i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </span>
+        </h1>
+      </div>
+      <div
+        class="hidden md:hidden lg:block bg-herodesktop bg-contain bg-center bg-no-repeat bg-[#E7E6E1] w-screen bg-fixed"
+      >
+        <div
+          id="heading family"
+          class="flex flex-col justify-center font-bold h-screen items-start mx-8"
+        >
+          <h3 class="text-red text-[22px]">NEW COLORS</h3>
+          <h1 class="text-black text-[80px]">Beats Fit Pro</h1>
+          <h2 class="text-black text-[30px]">Lock In. Work Out.</h2>
+          <a href="#" target="#" rel="noopener noreferrer"
+            ><button
+              type="submit"
+              class="text-white bg-black font-normal text-[22px] py-2 px-6 rounded-full mt-5 hover:shadow-[0px_-40px_20px_40px_#E31837_inset] hover:duration-300 hover:ease-in"
+            >
+              SHOP
+            </button></a
+          >
+        </div>
+      </div>
+      <!-- main 2 section -->
+      <div>
+        <h1
+          class="font-semibold text-center py-6 text-[40px] bg-backgroundcolor"
+        >
+          Popular Now
+        </h1>
+      </div>
+      <div class="wrapper bg-backgroundcolor w-screen h-full">
+        <div
+          class="container py-20 px-5 flex flex-col lg:flex-row items-center mx-auto gap-5"
+        >
+          <!-- Card-1 -->
+          <div
+            class="card-1 w-[300px] md:w-[400px] h-[500px] bg-white rounded-3xl flex flex-col items-start p-7 shadow-2xl hover:scale-[1.03] hover:duration-300"
+          >
+            <div class="card-top flex flex-col items-start">
+              <h2 class="text-[34px] font-semibold">Beats Studio Buds</h2>
+              <span class="text-[22px]">$189.95</span>
+            </div>
+            <div
+              class="card-center bg-[url('/asset/card-1-red-buds.jpg')] bg-contain mx-5"
+            >
+              <img
+                src="./asset/card-1-red-buds.png"
+                alt="red headphone"
+                class=""
+              />
+            </div>
+            <div
+              class="card-bottom flex justify-between self-center items-center w-auto gap-2 pt-10"
+            >
+              <span class="bg-[#384484] rounded-full h-[22px] w-[22px]"></span>
+              <span class="bg-[#a4a4a4] rounded-full h-[22px] w-[22px]"></span>
+              <span class="bg-[#f4cce4] rounded-full h-[22px] w-[22px]"></span>
+              <span class="bg-[#090909] rounded-full h-[22px] w-[22px]"></span>
+              <i class="fa-solid fa-plus"></i>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="card-2 w-[300px] md:w-[400px] h-[500px] bg-white rounded-3xl flex flex-col items-start p-7 shadow-2xl hover:scale-[1.03] hover:duration-300"
+          >
+            <div class="card-top flex flex-col items-start">
+              <h2 class="text-[34px] font-semibold">Beats Studio Buds</h2>
+              <span class="text-[22px]">$189.95</span>
+            </div>
+            <div
+              class="card-center bg-[url('/asset/card-1-red-buds.jpg')] bg-contain mx-5"
+            >
+              <img
+                src="./asset/card-2-headphone.png"
+                alt="red headphone"
+                class=""
+              />
+            </div>
+            <div
+              class="card-bottom flex justify-between self-center items-center w-auto gap-2 pt-10"
+            >
+              <span class="bg-[#090909] rounded-full h-[22px] w-[22px]"></span>
+              <span class="bg-[#CB9995] rounded-full h-[22px] w-[22px]"></span>
+              <span class="bg-[#CE1627] rounded-full h-[22px] w-[22px]"></span>
+              <i class="fa-solid fa-plus"></i>
+            </div>
+          </div>
+
+          <!-- card 3 -->
+          <div
+            class="card-3 w-[300px] md:w-[400px] h-[500px] bg-white rounded-3xl flex flex-col items-start p-7 shadow-2xl hover:scale-[1.03] hover:duration-300"
+          >
+            <div class="card-top flex flex-col items-start">
+              <h2 class="text-[34px] font-semibold">Beats Studio Buds</h2>
+              <span class="text-[22px]">$189.95</span>
+            </div>
+            <div
+              class="card-center bg-[url('/asset/card-1-red-buds.jpg')] bg-contain mx-5"
+            >
+              <img
+                src="./asset/card-3-earphone.png"
+                alt="red headphone"
+                class=""
+              />
+            </div>
+            <div
+              class="card-bottom flex justify-between self-center items-center w-auto gap-2 pt-10"
+            >
+              <span class="bg-[#090909] rounded-full h-[22px] w-[22px]"></span>
+              <span class="bg-[#f3fb97] rounded-full h-[22px] w-[22px]"></span>
+              <span class="bg-[#adddf3] rounded-full h-[22px] w-[22px]"></span>
+              <span class="bg-[#e0e5e5] rounded-full h-[22px] w-[22px]"></span>
+              <i class="fa-solid fa-plus"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- main section 3 Mobile view -->
+      <section id="section-3">
+        <div>
+          <div
+            class="block md:hidden lg:hidden bg-heromobile3 w-screen h-screen bg-center bg-cover flex flex-col justify-end items-start"
+          >
+            <div class="px-12 py-4">
+              <div class="mx-auto">
+                <h2 class="text-white text-[40px] font-semibold">
+                  Beats Fit Pro <br />
+                  Reviews
+                </h2>
+                <p class="text-white text-[25px]">
+                  Hear what tech reviewers are saying
+                </p>
+              </div>
+              <div class="mx-auto pt-5 flex gap-3 font-semibold text-[15px]">
+                <button
+                  type="submit"
+                  class="bg-white py-3 px-8 border-2 rounded-full hover:text-white hover:shadow-[0px_-40px_20px_40px_#E31837_inset] hover:duration-300 hover:ease-in tracking-wide"
+                >
+                  LEARN MORE
+                </button>
+                <button
+                  type="submit"
+                  class="bg-transparent border-2 py-3 px-8 rounded-full text-white hover:shadow-[0px_-40px_20px_40px_#E31837_inset] hover:duration-300 hover:ease-in tracking-wide"
+                >
+                  WATCH THE VIDEO
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- desktop and tablet view -- Main section -3 -->
+        <div
+          class="hidden md:block lg:block bg-heromain3 w-screen h-screen bg-center bg-cover"
+        >
+          <div
+            class="px-12 py-8 h-screen flex flex-col items-start justify-end"
+          >
+            <div>
+              <h2 class="text-white text-[60px] font-semibold">
+                Beats Fit Pro <br />
+                Reviews
+              </h2>
+              <p class="text-white text-[30px]">
+                Hear what tech reviewers are saying
+              </p>
+            </div>
+            <div class="pt-5 flex gap-3 font-semibold text-[15px]">
+              <button
+                type="submit"
+                class="bg-white py-3 px-8 border-2 rounded-full hover:text-white hover:shadow-[0px_-40px_20px_40px_#E31837_inset] hover:duration-300 hover:ease-in tracking-wide"
+              >
+                LEARN MORE
+              </button>
+              <button
+                type="submit"
+                class="bg-transparent border-2 py-3 px-8 rounded-full text-white hover:shadow-[0px_-40px_20px_40px_#E31837_inset] hover:duration-300 hover:ease-in tracking-wide"
+              >
+                WATCH THE VIDEO
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- main section 4 cards -->
+      <section id="section-4">
+        <div
+          class="overflow-x-scroll w-screen h-full flex pb-10 mx-auto bg-backgroundcolor"
+        >
+          <div class="wrapper h-full bg-backgroundcolor pt-10 px-6 flex gap-5">
+            <!-- bottom-card-1 -->
+
+            <div
+              class="card-1 w-[320px] md:w-[370px] h-[500px] bg-white rounded-3xl flex flex-col shadow-md hover:shadow-2xl hover:scale-[1.08] hover:duration-300"
+            >
+              <span class="pt-6 px-8">
+                <h2 class="text-[30px] font-semibold">Personalize it</h2>
+                <p class="text-[22px] font-medium text-[#535353]">
+                  free engraving for Beats Fit Pro Only at Apple
+                </p>
+              </span>
+              <img
+                src="./asset/card-bottom-1.png"
+                alt="#"
+                class="bg-contain pt-3"
+              />
+            </div>
+
+            <!-- bottom-card-2 -->
+
+            <div
+              class="card-2 w-[320px] md:w-[370px] h-[500px] bg-white rounded-3xl flex flex-col shadow-2xl hover:scale-[1.08] hover:duration-300"
+            >
+              <span class="pt-6 px-8">
+                <h2 class="text-[30px] font-semibold">Beat App for Android</h2>
+                <p class="text-[22px] font-medium text-[#535353]">
+                  Download the Beats app to unlock additional features
+                </p>
+              </span>
+              <img
+                src="./asset/card-bottom-2.png"
+                alt="#"
+                class="bg-contain h-[330px] pt-5"
+              />
+            </div>
+
+            <!-- bottom-card-3 -->
+
+            <div
+              class="card-3 w-[320px] md:w-[370px] h-[500px] bg-white rounded-3xl shadow-2xl flex flex-col hover:scale-[1.08] hover:duration-300"
+            >
+              <span class="pt-6 px-8">
+                <h2 class="text-[30px] font-semibold">Find Your Beats</h2>
+                <p class="text-[21px] font-medium text-[#535353]">
+                  If your Beats are missing, track them down with the 'Find My'
+                  app.
+                </p>
+              </span>
+              <img
+                src="./asset/card-bottom-3.png"
+                alt="#"
+                class="bg-contain w-[295px] h-[295px] pt-5"
+              />
+            </div>
+
+            <!-- bottom-card-4 -->
+
+            <div
+              class="card-4 w-[320px] md:w-[370px] h-[500px] bg-white rounded-3xl shadow-2xl flex flex-col hover:scale-[1.08] hover:duration-300"
+            >
+              <span class="pt-6 px-8">
+                <h2 class="text-[30px] font-semibold">Free Apple Music</h2>
+                <p class="text-[22px] font-medium text-[#535353]">
+                  Enjoy 6 months of Apple Music free with select Beats
+                </p>
+              </span>
+              <img
+                src="./asset/card-bottom-4.png"
+                alt="#"
+                class="bg-contain pt-5"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Main section 5 -->
+      <section id="section-5">
+        <div
+          class="h-full w-screen bg-gradient-to-t from-[#1a1a1a] to-[#7a7a7a]"
+        >
+          <div class="flex flex-col items-center lg:flex-row py-5">
+            <div class="item-left lg:w-1/2 bg-auto bg-center py-8 w-auto">
+              <img src="./asset/main-section-5.png" alt="" class="w-auto" />
+            </div>
+            <div
+              class="item-right lg:w-1/2 text-white flex flex-col justify-center items-start pl-4 lg:pl-40"
+            >
+              <h1 class="text-[65px] font-bold py-4">
+                REGISTER YOUR <br />
+                BEATS
+              </h1>
+              <button
+                type="submit"
+                class="text-[18px] font-medium bg-white text-black px-5 py-2 lg:px-10 lg:py-4 border-2 rounded-full hover:shadow-[0px_-40px_20px_40px_#E31837_inset] hover:duration-300 hover:ease-in hover:text-white"
+              >
+                REGISTER NOW
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Main section 6 -->
+      <section>
+        <div class="mx-32 py-12">
+          <div class="text-[#757575] bg-white text-[12px]">
+            <p class="p1 py-5">
+              1 Works with compatible Beats headphones. Find My Beats requires
+              an iPhone or iPod touch with iOS 14.5 or later, iPad with iPadOS
+              14.5 or later, or Mac with macOS Big Sur 11.3 or later. Customers
+              must have an Apple ID and be signed into their iCloud account with
+              Find My enabled.
+            </p>
+            <p class="p2">
+              2 New subscribers only. Offer available for a limited time to new
+              subscribers who connect an eligible device to an Apple device
+              running iOS 15 or iPadOS 15 or later. Offer good for 3 months
+              after eligible device pairing. No audio product purchase necessary
+              for current owners of eligible devices. Plan automatically renews
+              at your region’s price per month until cancelled. Restrictions and
+              other terms apply.
+            </p>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <style>
+          h2 {
+            font-size: 22px;
+          }
+          ul,
+          li,
+          p {
+            color: #757575;
+            display: flex;
+            flex-direction: column;
+            letter-spacing: 1px;
+          }
+          li:hover {
+            color: #e01e3c;
+            text-decoration: underline;
+            text-decoration-thickness: 2px;
+            text-underline-offset: 5px;
+          }
+        </style>
+        <div class="block lg:hidden flex flex-col border">
+          <div
+            class="social-media-Icons flex flex-row justify-around w-screen px-5 py-6 text-[35px] text-[#757575]"
+          >
+            <i class="fa-brands fa-twitter hover:text-black"></i>
+            <i class="fa-brands fa-facebook-square hover:text-black"></i>
+            <i class="fa-brands fa-youtube-square hover:text-black"></i>
+            <i class="fa-brands fa-instagram hover:text-black"></i>
+          </div>
+          <div
+            class="footer-item-1 flex flex-row justify-between border py-2 px-10 text-[20px] font-medium"
+          >
+            <h3 class="text-black">Location</h3>
+            <h3 class="text-[#757575]">CANADA (ENGLISH) ></h3>
+          </div>
+          <div
+            class="footer-item-2 flex flex-row justify-between border py-2 px-10 text-[20px] font-medium"
+          >
+            <h3 class="text-black">Newsletter</h3>
+            <h3 class="text-[#757575]">SIGN UP ></h3>
+          </div>
+        </div>
+        <div
+          class="block lg:hidden footer-item-3 flex flex-row justify-center items-center py-7 text-[15px] text-[#757575] gap-4"
+        >
+          <img src="./asset/beats-logo.png" alt="" class="w-[35px]" />
+          <h3>Copyright © 2023 Apple Inc. - All rights reserved.</h3>
+        </div>
+        <!-- large screen footer -->
+        <div
+          class="hidden lg:block lg:flex lg:flex-row mx-8 font-medium pt-20 h-full"
+        >
+          <div class="col-1 w-1/4 px-20">
+            <img src="./asset/beats-logo.png" alt="" class="w-[75px]" />
+          </div>
+          <div class="col-2 w-1/2 flex justify-between">
+            <div class="flex flex-col gap-4">
+              <h2>Products</h2>
+              <ul class="gap-4">
+                <li>VIEW ALL</li>
+                <li>BEATS FIT PRO</li>
+                <li>BEATS STUDIO BUDS</li>
+                <li>BEATS FLEX</li>
+                <li>POWERBEATS PRO</li>
+                <li>BEATS SOLO^3 WIRELESS</li>
+                <li>BEATS STUDIO^3 WIRELESS</li>
+              </ul>
+            </div>
+            <div class="flex flex-col gap-4">
+              <h2>Support</h2>
+              <ul class="gap-4">
+                <li>DOWNLOADS</li>
+                <li>PRODUCT HELP</li>
+                <li>SERVICE & WARRANTY</li>
+                <li>REGISTER YOUR BEATS</li>
+                <li>UPDATE YOUR BEATS</li>
+                <li>AUTHORIZED RETAILERS</li>
+                <li>CONTACT SUPPORT</li>
+                <li>INTERNATIONAL NUMBERS</li>
+              </ul>
+            </div>
+            <div class="flex flex-col gap-5">
+              <h2>Company</h2>
+              <li>ABOUT</li>
+              <li>CAREERS</li>
+              <h2>LEGAL</h2>
+              <li>TERMS OF USE</li>
+              <li>PRIVACY</li>
+              <li>TRADEMARKS</li>
+              <li>PROMOTION TERMS</li>
+            </div>
+          </div>
+          <div class="col-3 w-1/4 flex flex-col gap-20 items-start pl-20">
+            <div class="text-[#353535] text-[22px]">
+              <h2>Follow Us</h2>
+              <span class="text-[#757575] text-[30px]">
+                <i class="fa-brands fa-twitter hover:text-black"></i>
+                <i class="fa-brands fa-facebook-square hover:text-black"></i>
+                <i class="fa-brands fa-youtube-square hover:text-black"></i>
+                <i class="fa-brands fa-instagram hover:text-black"></i>
+              </span>
+            </div>
+            <div>
+              <h2>Location</h2>
+              <li>CANADA (ENGLISH) | CHANGE</li>
+            </div>
+            <div>
+              <h2>Newsletter</h2>
+              <li>SIGN UP</li>
+            </div>
+          </div>
+        </div>
+        <h3 class="hidden lg:block text-center py-20 text-[#353535]">
+          Copyright © 2023 Apple Inc. - All rights reserved.
+        </h3>
+      </footer>
+    </main>
+  </body>
+</html>
